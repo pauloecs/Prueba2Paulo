@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+            <li>@Html.ActionLink("Misión", "Mision", "Home")</li>
+            <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Categorias", "Index", "Categorias")</li>
+            <li>@Html.ActionLink("Productos", "Index", "Productoes")</li>
+        </nav>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

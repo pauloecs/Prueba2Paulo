@@ -26,5 +26,10 @@ namespace Prueba2Paulo.Controllers
 
             return View();
         }
+
+        public ActionResult Mision()
+        {
+            return View();
+        }
     }
 }
